@@ -1,0 +1,30 @@
+
+name: Update CNIP Firewall Address List
+
+on:
+  schedule:
+    - cron: '0 17 * * *' 
+jobs:
+  update-cnip-firewall-list:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Update CNIP Firewall Address List
+      run: |
+        curl -s https://raw.githubusercontent.com/TechCiel/GeoCN/release/GeoCN.txt \
+        | sed -e 's/^/add address=/g' -e 's/$/ list=CNIP/g' \
+        | sed -e $'1i\\\n/ip firewall address-list' \
+              -e $'1i\\\nremove [/ip firewall address-list find list=CNIP]' \
+              -e $'1i\\\nadd address=10.0.0.0/8 list=CNIP comment=private-network' \
+              -e $'1i\\\nadd address=172.16.0.0/12 list=CNIP comment=private-network' \
+              -e $'1i\\\nadd address=192.168.0.0/16 list=CNIP comment=private-network' \
+        > cnip.rsc
+      shell: bash
+
+    - name: Push new file to main branch
+      uses: ad-m/github-push-action@v0.6.0
+      with:
+        github_token: ${{ secrets.TOKEN }}
+        branch: main

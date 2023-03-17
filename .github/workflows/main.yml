@@ -22,6 +22,11 @@ jobs:
         > cnip.rsc
       shell: bash
 
+    - name: Commit files
+      run: |
+        git add cnip.rsc
+        git config --local user.name "github-actions[bot]"
+        git commit -m "built on $(date)"
     - name: Push new file to main branch
       uses: ad-m/github-push-action@v0.6.0
       with:

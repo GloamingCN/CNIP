@@ -2,8 +2,7 @@
 name: Update CNIP Firewall Address List
 
 on:
-  schedule:
-    - cron: '0 17 * * *' 
+  workflow_dispatch
 jobs:
   update-cnip-firewall-list:
     runs-on: ubuntu-latest

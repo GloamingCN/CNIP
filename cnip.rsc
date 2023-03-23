@@ -3484,7 +3484,6 @@ add address=116.198.0.0/16 list=CNIP
 add address=116.199.0.0/17 list=CNIP
 add address=116.199.128.0/19 list=CNIP
 add address=116.204.0.0/17 list=CNIP
-add address=116.204.132.0/23 list=CNIP
 add address=116.204.156.0/23 list=CNIP
 add address=116.204.159.0/24 list=CNIP
 add address=116.204.170.0/23 list=CNIP

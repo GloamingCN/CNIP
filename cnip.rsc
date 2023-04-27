@@ -3768,8 +3768,7 @@ add address=118.204.0.0/14 list=CNIP
 add address=118.212.0.0/15 list=CNIP
 add address=118.215.192.0/18 list=CNIP
 add address=118.224.0.0/14 list=CNIP
-add address=118.228.0.0/16 list=CNIP
-add address=118.229.0.0/16 list=CNIP
+add address=118.228.0.0/15 list=CNIP
 add address=118.230.0.0/16 list=CNIP
 add address=118.239.0.0/16 list=CNIP
 add address=118.242.0.0/16 list=CNIP

@@ -1177,7 +1177,6 @@ add address=101.38.0.0/15 list=CNIP
 add address=101.40.0.0/14 list=CNIP
 add address=101.44.16.0/20 list=CNIP
 add address=101.44.48.0/20 list=CNIP
-add address=101.44.160.0/20 list=CNIP
 add address=101.44.192.0/20 list=CNIP
 add address=101.44.228.0/22 list=CNIP
 add address=101.44.236.0/22 list=CNIP

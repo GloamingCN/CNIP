@@ -6070,10 +6070,12 @@ add address=203.105.96.0/19 list=CNIP
 add address=203.105.128.0/19 list=CNIP
 add address=203.107.0.0/19 list=CNIP
 add address=203.107.32.0/20 list=CNIP
-add address=203.107.48.0/22 list=CNIP
-add address=203.107.52.0/22 list=CNIP
-add address=203.107.56.0/21 list=CNIP
-add address=203.107.64.0/18 list=CNIP
+add address=203.107.48.0/20 list=CNIP
+add address=203.107.64.0/22 list=CNIP
+add address=203.107.68.0/22 list=CNIP
+add address=203.107.72.0/21 list=CNIP
+add address=203.107.80.0/20 list=CNIP
+add address=203.107.96.0/19 list=CNIP
 add address=203.110.160.0/19 list=CNIP
 add address=203.110.208.0/20 list=CNIP
 add address=203.110.232.0/23 list=CNIP
